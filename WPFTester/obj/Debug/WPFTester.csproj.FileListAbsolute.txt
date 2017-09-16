@@ -1,0 +1,17 @@
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\bin\Debug\WPFTester.exe.config
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\bin\Debug\WPFTester.exe
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\bin\Debug\WPFTester.pdb
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.csprojResolveAssemblyReference.cache
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\App.g.cs
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester_MarkupCompile.cache
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester_MarkupCompile.lref
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\App.baml
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\View\Resources.baml
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.g.resources
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.Properties.Resources.resources
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.csproj.GenerateResource.Cache
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.exe
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\WPFTester.pdb
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\View\MainWindow.g.cs
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\View\MainWindow.baml
+C:\Users\Service Tech\Documents\Test Programs\WPFTester\WPFTester\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -1,0 +1,82 @@
+﻿<Window x:Class="WPFTester.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTester"
+        xmlns:conv="clr-namespace:WPFTester.Converters"
+        mc:Ignorable="d" Height="300" Width="300"
+        Title="MainWindow" Background="{DynamicResource WindowBackgroundBrush}">
+
+  <Window.Resources>
+    <conv:YesNoToBooleanConverter x:Key="YesNoToBooleanConverter"/>
+  </Window.Resources>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <StackPanel Margin="10" VerticalAlignment="Center">
+      <TextBox Name="txtTest"/>
+      <WrapPanel Margin="0,10">
+        <TextBlock Text="Current value is: " />
+        <TextBlock Text="{Binding ElementName=txtTest, Path=Text, Converter={StaticResource YesNoToBooleanConverter}}"/>
+      </WrapPanel>
+      <CheckBox IsChecked="{Binding ElementName=txtTest, Path=Text, Converter={StaticResource YesNoToBooleanConverter}}" Content="Yes"/>
+
+    </StackPanel>
+
+    <StackPanel Grid.Row="1" Background="Transparent" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="180">
+      <StackPanel.Resources>
+
+        <Style TargetType="Button">
+          <Setter Property="Background" Value="Transparent" />
+          <Setter Property="BorderThickness" Value="0" />
+          <Setter Property="Template" Value="{DynamicResource HoverOff}">
+          </Setter>
+        </Style>
+      </StackPanel.Resources>
+
+      <Border BorderBrush="DodgerBlue" BorderThickness="2" CornerRadius="25,0,0,25" Height="60" Width="65"  >
+        <Border.Style>
+          <Style TargetType="Border">
+            <Setter Property="Background" Value="LightGray"/>
+            <Style.Triggers>
+              <DataTrigger Binding="{Binding ElementName=btnDec, Path=IsMouseOver}" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TransparentBack}"/>
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </Border.Style>
+        <Button Name="btnDec" Command="{Binding DecKV}">
+          <Image Source="/WPFTester;component/View/minusbutton.png" Stretch="None" />
+        </Button>
+      </Border>
+
+      <Border Background="White" BorderBrush="DodgerBlue" BorderThickness="2" Height="60" Width="50">
+        <TextBlock Name="txtValue" Text="{Binding _KV}" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Border>
+
+      <Border BorderBrush="DodgerBlue" BorderThickness="2" CornerRadius="0,25,25,0" Height="60" Width="65">
+        <Border.Style>
+          <Style TargetType="Border">
+            <Setter Property="Background" Value="LightGray"/>
+            <Style.Triggers>
+              <DataTrigger Binding="{Binding ElementName=btnInc, Path=IsMouseOver}" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TransparentBack}"/>
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </Border.Style>
+        <Button Name="btnInc" Command="{Binding IncKV}">
+          <Image Source="/WPFTester;component/View/plusbutton.png" Stretch="None"/>
+        </Button>
+      </Border>
+
+    </StackPanel>
+
+  </Grid>
+
+</Window>
